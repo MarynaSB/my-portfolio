@@ -1,5 +1,321 @@
 :root {
     --heading-font-family: 'Qwitcher Grypen', cursive;
     --secondary-font-family: 'Caveat', cursive;
-    -- default-font-family: 'Aref Ruqaa Ink', serif;
+    --default-font-family: 'Aref Ruqaa Ink', serif;
+    --branding-color: linear-gradient(to right, rgb(109, 124, 255)0%, rgb(255, 81, 255)100%);
+    --secondary-color: rgb(212, 92, 252);
+    --third-color: rgb(130, 120, 252);
+    --background-color: #0d0f13;
+}
+
+body {
+    font-family: var(--default-font-family);
+    background: var(--background-color);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 62px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.navbar {
+    --bs-navbar-color: var(--third-color);
+    --bs-navbar-toggler-border-color: var(--secondary-color);
+}
+
+.logo {
+    max-height: 60px;
+}
+
+.nav-item {
+    margin: 0 30px;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--secondary-color);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav { 
+    color: var(--third-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 10px 20px 60px 20px;
+    margin: 0 30px;
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.hero h1 {
+    font-size: 102px;
+    line-height: 1;
+}
+
+.hero h2 {
+    color: var(--third-color);
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.btn-branding {
+    background: var(--branding-color);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+}
+
+.btn-branding:hover {
+    color:black;
+}
+
+.introduction {
+    border: 2px solid var(--third-color);
+    border-radius: 10px;
+    padding: 20px 0 40px 0;
+    background-image: url("/images/bg-img.jpg");
+    background-size: cover;
+    margin: 0 50px;
+}
+
+.btn-branding-outline {
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px; 
+}
+
+.btn-branding-outline:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.project-description {
+    padding: 80px 40px;
+}
+
+.project-description h2 {
+    color: var(--third-color);
+}
+
+.project-image-box img {
+    border-radius: 10px;
+    border: 2px solid var(--third-color);
+    max-height: 565px;
+    max-width: 480px;
+    margin-left: 30px;
+}
+
+.contact-box {
+    background: var(--secondary-color);
+    border-radius: 20px;
+    padding: 50px 120px;
+    margin-top: 100px;
+}    
+
+.contact-box h3 {
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.contact-box p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--background-color);
+    margin: 0;
+}
+
+.contact-btn {
+    background: var(--background-color);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+    margin-top: 15px;
+}        
+
+.contact-btn:hover {
+    background-color: white;
+    color: var(--background-color);
+}
+
+.email-link {
+    color: var(--third-color);
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.social-links a {
+    font-size: 24px;
+    color: white;
+    margin: 0 20px;
+    background: var(--branding-color);
+    border-radius: 35px;
+    padding: 10px 18px;
+    transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+    color: var(--background-color);
+    background: var(--third-color);
+}
+
+
+
+
+
+
+.content-container {
+    padding: 120px 60px;
+}
+
+.content h1 {
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.content h2 {
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+
+.content h3 {
+font-size: 24px;
+font-family: var(--default-font-family);
+font-weight: 700;
+line-height: 1.5;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+.content {
+    margin: 30px;
+}
+
+.round-img {
+    border-radius: 15px;
+}
+
+.developer {
+    font-size: 12px;
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 48px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 36px;
+    } 
+
+   .hero {
+    margin: 0px 20px;
+   }
+
+    .hero p {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .introduction {
+        padding: 20px 20px 40px 20px;
+        margin: 10px 0;
+    }
+
+    .topic-sentence {
+        margin: 0 20px;
+    }
+
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .contact-box {
+        margin-top: 50px;
+        padding: 20px 40px;
+    }
+
+    .contact-box h3 {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    .contact-box p {
+        font-size: 14px;
+    }
+
+    .contact-btn{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px 20px;
+        margin: 20px 0 0 20px;
+    }
+
+    .email-link {
+        font-size: 18px;
+    }
+
+    .content {
+        text-align: center;
+        padding: 0;
+    }
+
+    .content h1 {
+        font-size: 44px;
+        line-height: 1.5;
+    }
 }
