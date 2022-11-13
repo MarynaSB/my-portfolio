@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family: var(--heading-font-family);
 }
 
@@ -229,10 +229,10 @@ p {
 }
 
 .content h3 {
-font-size: 32px;
-font-family: var(--default-font-family);
-font-weight: 700;
-line-height: 1.5;
+    font-size: 32px;
+    font-family: var(--default-font-family);
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 .content p {
@@ -343,7 +343,7 @@ line-height: 1.5;
         font-size: 14px;
         line-height: 1.2;
         padding: 15px 30px;
-        margin: 30px;
+        margin: 20px auto;
     }
 
     .email-link {
@@ -355,12 +355,11 @@ line-height: 1.5;
     }
 
     .content-container img {
-        display: block;
-        margin: auto;
+        max-height: 440px;
     }
 
     .content {
-        margin: 10px 10px 20px 10px;
+        margin: 10px 10px 30px 10px;
     }
 
     .content h1 {
@@ -404,5 +403,16 @@ line-height: 1.5;
 
     .content p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-btn {
+        padding: 15px 30px;
+        margin: 30px 15px;
+    }
+
+    .main-btn {
+        margin: 10px 15px;
     }
 }
