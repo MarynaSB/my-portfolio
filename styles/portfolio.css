@@ -206,6 +206,9 @@ p {
 
 .content-container img {
     border-radius: 10px;
+    max-height: 600px;
+    display: block;
+    margin: auto;
 }
 
 .content {
@@ -268,6 +271,24 @@ line-height: 1.5;
 
 .developer {
     font-size: 12px;
+}
+
+.work-sentence {
+    color: var(--secondary-color)!important;
+    font-size: 64px;
+}
+
+.work-content h3 {
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+.src-btns a {
+    margin: 0 30px;
+}
+
+.projects {
+    margin-bottom: 40px;
 }
 
 @media (max-width: 960px) {
@@ -350,6 +371,14 @@ line-height: 1.5;
     .my-projects-btn {
         display: none;
     }
+
+    .src-btns a {
+        margin: 0 10px;
+    }
+
+    .projects {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 961px) and (max-width: 1400px) {
@@ -375,10 +404,5 @@ line-height: 1.5;
 
     .content p {
         font-size: 16px;
-    }
-
-    .content-container img {
-        display: block;
-        margin: auto;
     }
 }
