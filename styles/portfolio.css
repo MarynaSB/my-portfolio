@@ -67,7 +67,6 @@ p {
 .hero {
     text-align: center;
     padding: 10px 20px 60px 20px;
-    margin: 0 30px;
 }
 
 .hero p {
@@ -102,10 +101,10 @@ p {
 .introduction {
     border: 2px solid var(--third-color);
     border-radius: 10px;
-    padding: 20px 0 40px 0;
+    padding: 40px 0;
     background-image: url("/images/bg-img.jpg");
     background-size: cover;
-    margin: 0 50px;
+    margin: 100px 60px 20px 60px;
 }
 
 .btn-branding-outline {
@@ -202,6 +201,7 @@ p {
 
 .content-container {
     padding: 60px;
+    margin-top: 70px;
 }
 
 .content-container img {
@@ -294,7 +294,7 @@ p {
 @media (max-width: 960px) {
 
     .hero {
-    margin: 0px 20px;
+    margin: 100px 20px 20px 20px;
    }
 
     .hero p {
@@ -312,11 +312,11 @@ p {
 
     .introduction {
         padding: 20px 20px 40px 20px;
-        margin: 10px 0;
+        margin: 10px auto;
     }
 
     .topic-sentence {
-        margin: 0 20px;
+        margin: -15px 20px;
     }
 
     .project-description {
@@ -351,7 +351,7 @@ p {
     }
 
     .content-container {
-        padding: 20px;
+        padding: 30px 15px 0 15px;
     }
 
     .content-container img {
@@ -381,8 +381,12 @@ p {
 }
 
 @media (min-width: 961px) and (max-width: 1400px) {
-    .content-container {
-        padding: 0;
+    .hero {
+        margin: 10px 20px 20px 20px;
+    }
+
+    .topic-sentence {
+        margin: -30px 0 50px 0;
     }
 
     .content {
